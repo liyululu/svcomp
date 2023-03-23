@@ -1,15 +1,12 @@
 ### svcomp
-# This package computes the allocation of cost according to Shapley Value.
-# The input can be matrix or tibble form contains the name of composition and volume.
-# This package must use tidyverse and gtools, you would better install them first.
 
 #' Shapley Value Computation of the transaction cost
 #'
 #' @description
-#' This package computes the allocation of cost according to Shapley Value. The input can be matrix or tibble form contains the name of composition and volume. This package must use tidyverse and gtools, you would better install them first.
+#' This package computes the allocation of cost according to Shapley Value. The input can be matrix or dataframe contains the name of composition and volume. This package must use gtools, you would better install it first.
 #'
-#' @param CS_table A tibble, represents the cost structure.
-#' @param table A matrix or a tibble.
+#' @param CS_table A matrix or A dataframe, represents the cost structure.
+#' @param table A matrix or A dataframe, represents the input the volumes of firms.
 #' @returns A list with 4 elements.
 #'
 #' @examples

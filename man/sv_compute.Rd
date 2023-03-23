@@ -7,15 +7,15 @@
 sv_compute(CS_table, table)
 }
 \arguments{
-\item{CS_table}{A tibble, represents the cost structure.}
+\item{CS_table}{A matrix or A dataframe, represents the cost structure.}
 
-\item{table}{A matrix or a tibble.}
+\item{table}{A matrix or A dataframe, represents the input the volumes of firms.}
 }
 \value{
 A list with 4 elements.
 }
 \description{
-This package computes the allocation of cost according to Shapley Value. The input can be matrix or tibble form contains the name of composition and volume. This package must use tidyverse and gtools, you would better install them first.
+This package computes the allocation of cost according to Shapley Value. The input can be matrix or dataframe contains the name of composition and volume. This package must use gtools, you would better install it first.
 }
 \examples{
 CS <- data.frame('lower_v'=c(1,300001,3000001,20000001,100000001),'upper_v'=c(300000,3000000,20000000,100000000,Inf),'Commission_rate'=c(0.0035,0.0020,0.0015,0.0010,0.0005))
